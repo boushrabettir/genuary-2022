@@ -1,0 +1,146 @@
+html, body {
+  background-color: lightblue;
+  margin: 0;
+  animation: background 35s infinite;
+  animation-timing-function: ease-in-out;
+  transition-timing-function: cubic-bezier(0.5, 0, 0.5, 1);
+  transition-delay: 0.5s;
+}
+ 
+ body .stars {
+   mix-blend-mode: screen;
+   position: absolute;
+ }
+
+ @keyframes background {
+   0% {
+    background-color: lightblue;
+ }
+
+  25% {
+    background-color: #cb95d6;
+  }
+  
+  40% {
+    background-color: darkblue;
+  }
+
+  45% {
+   background-color: darkblue;
+  }
+  
+  60% {
+   background-color: #09076e;
+  }
+
+  65% {
+    background-color: #09076e;
+  }
+
+  70% {
+   background-color: darkblue;
+  }
+
+  75% {
+   background-color: darkblue;
+  }
+
+  80% {
+    background-color: #a456a4;
+  }
+  
+
+  95% {
+    background-color: lightblue;
+  }
+  
+  100% {
+    background-color: lightblue;
+  }
+}
+
+#sun {
+  background-color: rgb(255, 240, 0, 1);
+  width: 200px;
+  height: 200px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 35em;
+  border-radius: 15em;
+  box-shadow: 0 0 0 20px rgb(245, 236, 0, 0.8), 0 0 0 40px rgb(245,246,0, 0.5), 0 0 0 60px rgb(245,245,0,0.4), 0 0 0 90px rgb(245,245,0,0.2),0 0 0 110px rgb(245,245,0,0.1);
+  animation: sun;
+  animation-duration: 35s;
+  animation-iteration-count: infinite;
+}
+
+#ocean {
+  background-image: linear-gradient(#2424ff 1%, #3a88fe 10%, beige 15%);
+  width: 100%;
+  height: 40em;
+  position: absolute;
+}
+
+@keyframes sun{
+  0% {
+   transform: translate(0em, 17em);
+   box-shadow: 0 0 0 5px rgb(245, 236, 0, 0.8), 0 0 0 8px rgb(245,246,0, 0.5), 0 0 0 12px rgb(245,245,0,0.4), 0 0 0 15px rgb(245,245,0,0.2),0 0 0 20px rgb(245,245,0,0.1);
+  }
+
+  5% {
+  transform: translate(0em, 17em);
+  box-shadow: 0 0 0 5px rgb(245, 236, 0, 0.8), 0 0 0 12px rgb(245,246,0, 0.5), 0 0 0 15px rgb(245,245,0,0.4), 0 0 0 20px rgb(245,245,0,0.2),0 0 0 26px rgb(245,245,0,0.1);
+  }
+
+  15% {
+  transform: translate(0em, 40em);
+  background-color: #ffc677;
+  box-shadow: 0 0 0 9px #ffc677, 0 0 0 20px rgb(255,198,119, 0.5), 0 0 0 35px rgb(225,198,119, 0.4), 0 0 0 55px rgb(225,198,119,0.2), 0 0 0 75px rgb(225,198,119, 0.1);
+  }
+
+  17% {
+  transform: translate(0em, 40em);
+  background-color: #ffc677;
+  box-shadow: 0 0 0 9px #ffc677, 0 0 0 30px rgb(255,198,119, 0.5), 0 0 0 50px rgb(225,198,119, 0.4), 0 0 0 65px rgb(225,198,119,0.2), 0 0 0 80px rgb(225,198,119, 0.1);
+    
+  }
+
+ 30% {
+  transform: translate(0em, 60em);
+  background-color: #ffffff;
+  box-shadow: 0 0 0 13px white, 0 0 0 17px rgb(255,255,255, 0.5), 0 0 0 25px rgb(255,255,255, 0.4), 0 0 0 36px rgb(255,255,255, 0.2), 0 0 0 45px rgb(255,255,255, 0.1);
+  }
+
+ 45% {
+  transform: translate(0em, 15em);
+  background-color: #ffffff;
+  box-shadow: 0 0 0 13px white, 0 0 0 16px rgb(255,255,255, 0.5), 0 0 0 25px rgb(255,255,255, 0.4), 0 0 0 34px rgb(255,255,255, 0.2), 0 0 0 50px rgb(255,255,255, 0.1);
+  }
+  
+  60% {
+   transform: translate(0em,15em);
+   background-color: #ffffff;
+   box-shadow: 0 0 0 25px white, 0 0 0 35px rgb(255,255,255, 0.5), 0 0 0 50px rgb(255,255,255, 0.4), 0 0 0 65px rgb(255,255,255, 0.2), 0 0 0 75px rgb(255,255,255, 0.1); 
+  }
+
+  75% {
+   transform: translate(0em,60em);
+   background-color: #ffffff;
+    box-shadow: 0 0 0 13px white, 0 0 0 50px rgb(255,255,255, 0.5), 0 0 0 75px rgb(255,255,255, 0.4), 0 0 0 112px rgb(255,255,255, 0.2), 0 0 0 145px rgb(255,255,255, 0.1);
+  }
+
+  85% {
+   transform: translate(0em, 40em);
+   background-color: #ffc677;
+   box-shadow: 0 0 0 9px #ffc677, 0 0 0 12px rgb(255,198,119, 0.5), 0 0 0 15px rgb(225,198,119, 0.4), 0 0 0 20px rgb(225,198,119,0.2), 0 0 0 26px rgb(225,198,119, 0.1);
+  }
+
+  95% {
+   transform: translate(0em, 17em);
+   box-shadow:  0 0 0 5px rgb(245, 236, 0, 0.8), 0 0 0 8px rgb(245,246,0, 0.5), 0 0 0 12px rgb(245,245,0,0.4), 0 0 0 15px rgb(245,245,0,0.2),0 0 0 20px rgb(245,245,0,0.1);
+  }
+
+  100% {
+   transform: translate(0em, 17em);
+   box-shadow:  0 0 0 5px rgb(245, 236, 0, 0.8), 0 0 0 8px rgb(245,246,0, 0.5), 0 0 0 12px rgb(245,245,0,0.4), 0 0 0 15px rgb(245,245,0,0.2),0 0 0 20px rgb(245,245,0,0.1);
+  }
+}
