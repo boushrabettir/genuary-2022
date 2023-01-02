@@ -1,0 +1,41 @@
+*{
+  margin: 0;
+  padding: 0;
+ 
+}
+.hero
+  {
+    min-height: 100vh;
+    width: 100%;
+    background-color: #000;
+  }
+  
+img {
+  animation: change-image 2s infinite;
+}
+
+@keyframes change-image {
+  0% {
+    content: url('1img5.jpeg');
+  }
+  10%
+  {
+    content: url('1img6.jpeg');
+  }
+  20%
+  {
+    content: url('1img5.jpeg');
+  }
+  30%
+  {
+    content: url('1img9.jpeg');
+  }
+  50% {
+    content: url('1img7.jpeg');
+  }
+  100% {
+    content: url('1img9.jpeg');
+  }
+  
+}
+
