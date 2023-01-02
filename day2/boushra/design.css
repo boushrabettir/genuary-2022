@@ -1,0 +1,76 @@
+html, body {
+  height: 100%;
+  width: 100%;
+}
+
+/*Made in 10 minutes*/
+.all-eyes {
+  margin-top: 90px;
+  position: absolute;
+}
+
+.eye {
+  
+  background: black;
+  width: 180px;
+  height: 100px;
+  border-radius: 150px;
+  animation: blinking 5s infinite;
+  position: absolute;
+  margin-left: 10px;
+}
+
+.eye-blink{
+  background: black;
+  width: 180px;
+  height: 100px;
+  border-radius: 150px;
+  margin-left: 300px;
+  animation: blinking 5s infinite;
+  position: absolute;
+}
+
+@keyframes blinking {
+
+  0% {
+     height: 100px;
+     border-radius: 150px;
+  }
+
+  50% {
+    height: 10px;
+    border-radius: 500px;
+    
+  }
+
+  100% {
+     height: 100px;
+    border-radius: 150px;
+    
+  }
+}
+
+.mouth {
+  background-color: black;
+  height: 70px;
+  width: 400px;
+  margin-top: 20em;
+  position: absolute;
+  margin-left: 3em;
+  border-radius: 50px 50px 1500px 1500px;
+  animation: mouth 5s infinite;
+}
+
+@keyframes mouth {
+  0% {
+    border-radius: 2500px 2500px 50px 50px; 
+  }
+
+  50% {
+    border-radius: 50px 50px 2500px 2500px;
+  }
+
+  100%{
+    border-radius: 2500px 2500px 50px 50px;
+  }
+}
