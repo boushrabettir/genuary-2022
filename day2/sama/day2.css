@@ -1,0 +1,76 @@
+html {
+ background-color: black;
+}
+.minutes {
+  color:rgb(153, 163, 229);
+  --color-primary: rgb(53, 115, 209);
+  --color-secondary: rgb(42, 51, 235);
+  --color-tertiary: rgb(69, 54, 184);
+  --color-quaternary:rgb(23, 11, 128);
+  font-size: 60px;
+  text-align: center;
+  text-shadow: 2px 2px 0 var(--color-primary),
+               4px 4px 0 var(--color-secondary),
+               6px 6px 0 var(--color-tertiary),
+               8px 8px 0 var(--color-quaternary);
+  animation:layers 1.2s ease-in infinite, moving 1.2s ease-in infinite;
+  margin-top: 300px;
+  font-family: Mirza;
+}
+
+@keyframes layers {
+  0% {
+    text-shadow: none;
+  }
+  10% {
+    text-shadow: 2px 2px 0 var(--color-primary);
+  }
+  20% {
+    text-shadow: 2px 2px 0 var(--color-primary), 4px 4px 0 var(--color-secondary);
+  }
+  30% {
+    text-shadow: 2px 2px 0 var(--color-primary), 4px 4px 0 var(--color-secondary), 6px 6px 0 var(--color-tertiary);
+  }
+  40% {
+    text-shadow: 2px 2px 0 var(--color-primary), 4px 4px 0 var(--color-secondary), 6px 6px 0 var(--color-tertiary),
+    8px 8px 0 var(--color-quaternary);
+  }
+  50% {
+    text-shadow: 2px 2px 0 var(--color-primary), 4px 4px 0 var(--color-secondary), 6px 6px 0 var(--color-tertiary),
+    8px 8px 0 var(--color-quaternary);
+  }
+  60% {
+    text-shadow: 2px 2px 0 var(--color-primary), 4px 4px 0 var(--color-secondary), 6px 6px 0 var(--color-tertiary),
+    8px 8px 0 var(--color-quaternary);
+  }
+  70% {
+    text-shadow: 2px 2px 0 var(--color-primary), 4px 4px 0 var(--color-secondary), 6px 6px 0 var(--color-tertiary);
+  }
+  80% {
+    text-shadow: 2px 2px 0 var(--color-primary), 4px 4px 0 var(--color-secondary)
+  }
+  90% {
+    text-shadow: 2px 2px 0 var(--color-primary);
+  }
+  100% {
+    text-shadow:none;
+  }
+}
+
+@keyframes moving {
+  0% {
+    transform: translate(0px, 0px);
+  }
+  40% {
+    transform: translate(-10px, -10px) ;
+  }
+  50% {
+    transform: translate(-10px, -10px) ;
+  }
+  60% {
+    transform: translate(-10px, -10px);
+  }
+  100% {
+    transform: translate(0px, 0px);
+  }
+}
