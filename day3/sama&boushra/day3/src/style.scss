@@ -1,0 +1,62 @@
+body {
+	position: relative;
+	width: 100%;
+	height: 100vh;
+	background-color: black;
+	border: solid 15px grey;
+	
+	#scene {
+		position: absolute;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		opacity: 100;
+		animation: text 30s;
+	}
+}
+
+.typing-text {
+  margin: 30px;
+  font-size: 13px;
+  overflow: hidden;
+  animation: typing 12s steps(350, end);
+  white-space: nowrap;
+	opacity: 0;
+	font-family: 'Yeon Sung', sans-serif;
+	z-index: 5;
+}
+
+@keyframes text {
+	from{
+		opacity: 0;
+	}
+	
+	to {
+		opacity: 100;
+	}
+}
+
+@keyframes typing {
+  from {height: 0; opacity: 100;}
+  to {height: 50%;
+		opacity: 0;
+	}
+}
+
+h1 {
+  color: #47f05b;
+  letter-spacing: 3px;
+}
+
+#type {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  font-size: 40px;
+  display: flex;
+  color: white;
+}
