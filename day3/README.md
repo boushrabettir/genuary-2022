@@ -2,4 +2,4 @@
 
 Todays prompt is to create a glitch art with code. 
 
-![day3_AdobeExpress](https://user-images.githubusercontent.com/111910374/210487184-09ce653e-1ae6-4cc6-893b-805bda4c0a68.gif)
+![day3_AdobeExpress](https://user-images.githubusercontent.com/111910374/210488010-c0d12112-92af-40f7-9d58-23d0add0c728.gif)
