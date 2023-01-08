@@ -1,0 +1,168 @@
+html, body {
+  height: 100%;
+  width: 100%;
+  background-color: #4a4545;
+}
+
+.flex {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 12em;
+  transform: scale(1.4);
+  animation: anim 5s infinite;
+  padding-left: 25em;
+  padding-right: 25em;
+  
+}
+
+h1{
+  text-align: center;
+  font-size: 20px;
+  margin-top: 13px;
+  color: white;
+}
+
+#heart {
+  color: #b51a00;
+}
+
+@keyframes anim {
+  0% {transform: translateY(0) scale(1.4);}
+  50%{transform: translateY(30px) scale(1.4);}
+  100% {transform: translateY(0) scale(1.4);}
+}
+
+
+.flipbox{
+ 
+  background-color: transparent;
+  width: 400px;
+  height: 500px;
+  z-index: 40;
+}
+
+.flipboxinner{
+  position: relative;
+  transition: transform 1s;
+  text-align: center;
+  transform-style: preserve-3d;
+  width: 25em;
+  height: 35em;
+}
+
+.flipbox:hover .flipboxinner{
+  transform: rotateY(180deg);
+}
+
+.frontside, .backside {
+  position: absolute;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  width: 25em;
+  height: 35em;
+  border: solid 2px #ebebeb;
+  border-radius: 10px;
+  
+}
+
+
+.intro {
+  display: flex;
+  justify-content: center;
+}
+
+h3 {
+  font-family: 'Bakbak One', sans-serif;
+  font-size: 40px;
+  letter-spacing: 4px;
+  color: #1f281f;
+  
+}
+
+.frontside{
+  background: rgb(143,188,143, 0.2);
+  border-radius: 16px;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(2.5px);
+  -webkit-backdrop-filter: blur(2.5px);
+  border: 1px solid rgb(143,188,143, 0.2);
+  font-family: 'Silkscreen', san-serif; 
+}
+
+.card-stats {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 4px;
+}
+
+.card-stat {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card-stat-name {
+  margin: 0;
+  font-size: 12px;
+  font-weight: 700;
+  color: #042f12;
+  text-transform: uppercase;
+}
+
+.card-stat-value {
+  margin: 4px 0 0;
+  font-size: 18px;
+  font-weight: bold;
+  color: black;
+  text-transform: uppercase;
+}
+
+.backside{
+
+  transform: rotateY(180deg);
+  font-family: 'Silkscreen', san-serif;
+  background: rgb(143,188,143, 0.2);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(2.5px);
+  -webkit-backdrop-filter: blur(2.5px);
+  border: 1px solid rgb(143,188,143, 0.2);
+  z-index: 20;
+ 
+}
+
+.flipbox .backside .cssstuff {
+  animation-name: movingdown;
+  animation-duration: 2s;
+  animation-iteration-count: initial;
+  
+}
+
+#raven {
+  width: 220px;
+}
+
+.ravenclaw {
+  background-color: rgb(0, 86, 214, 0.2);
+  border: 1px solid rgb(0, 46, 122, 0.2);
+  
+}
+
+.p {
+  width: 280px;
+  margin-left: auto;
+  margin-right: auto;
+  font-weight: 500;
+}
+
+.ravenp {
+  width: 350px;
+}
+
+#ravenh3 {
+  color: #031b6b;
+}
+
+.raventype {
+  color: #11053b;
+}
