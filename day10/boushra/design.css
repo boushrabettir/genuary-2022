@@ -1,0 +1,25 @@
+:root {
+  background: linear-gradient(132deg, rgb(65, 80, 95) 0.00%, rgb(36, 37, 38) 100.00%);
+  text-align: center;
+  height: 100%;
+}
+
+button {
+  background: linear-gradient(132deg, rgb(3, 148, 108) 0.00%, rgb(33, 35, 34) 100.00%);
+  border-radius: 10px;
+  border: none;
+  margin-left:auto;
+  margin-right: auto;
+  font-size: 15em;
+  width: 4em;
+  color: lightgreen;
+  margin-top: 1em;
+  transition: all 600ms ease;
+  
+}
+
+button:hover {
+  transform: scale(1.03);
+  box-shadow: 0 0 20px white;
+  cursor: pointer;
+}
