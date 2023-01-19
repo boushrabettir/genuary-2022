@@ -1,0 +1,38 @@
+:root {
+  background-color: gray;
+  position: absolute;
+  top: 20%;
+  left: 35%;
+}
+
+#circle {
+  width: 30em;
+  height: 30em;
+  border-radius: 50%;
+  background-color: #4f52b0;
+  box-shadow: 0 0 35px #888db4;
+}
+
+#square {
+  width: 25em;
+  height: 25em;
+  transform: translate(-5em, -16em);
+   background:
+    linear-gradient(45deg, transparent 50%, #c6bc90 50%),
+    linear-gradient(135deg, transparent 50%, #aca062 50%),
+    linear-gradient(225deg, transparent 50%, #d9cd92 50%),
+    linear-gradient(315deg, transparent 50%, #dbbf33 50%);
+  background-size: 15px 15px;
+
+}
+
+#line {
+  background-color: #542727;
+  width: 15px;
+  height: 30em;
+  transform: translate(23em, -65em) rotateZ(120deg) scale(1.4);
+     background:
+    linear-gradient(45deg, transparent 50%, #997e7a 50%),
+    linear-gradient(180deg, transparent 50%, #6f4d4d 50%);
+  background-size: 15px 15px;
+}
