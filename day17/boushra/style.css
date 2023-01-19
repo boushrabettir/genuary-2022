@@ -1,0 +1,78 @@
+body {
+  background:
+    linear-gradient(45deg, transparent 50%, #c6bc90 50%),
+    linear-gradient(135deg, transparent 50%, #aca062 50%),
+    linear-gradient(225deg, transparent 50%, #b9b188 50%),
+    linear-gradient(315deg, transparent 50%, #dbbf33 50%);
+  background-size: 20px 20px;
+}
+
+div {
+   margin: auto;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+#grid {
+  background:
+    linear-gradient(45deg, transparent 50%, #7982b4 50%),
+    linear-gradient(135deg, transparent 50%, #626eac 50%),
+    linear-gradient(225deg, transparent 50%, #bbc0d8 50%),
+    linear-gradient(315deg, transparent 50%, #6261b3 50%);
+  background-size: 20px 20px;
+  width: 50em;
+  height: 50em;
+  animation: anim2 20s infinite;
+
+}
+
+#grid div:nth-child(1){
+   background:
+    linear-gradient(45deg, transparent 50%, #b47995 50%),
+    linear-gradient(135deg, transparent 50%, #ac6269 50%),
+    linear-gradient(225deg, transparent 50%, #d8bbc9 50%),
+    linear-gradient(315deg, transparent 50%, #b36161 50%);
+  background-size: 15px 15px;
+  width: 30em;
+  height: 30em;
+  animation: anim1 15s infinite;
+}
+
+
+#grid div:nth-child(2){
+   background:
+    linear-gradient(45deg, transparent 50%, #79b488 50%),
+    linear-gradient(135deg, transparent 50%, #62ac6b 50%),
+    linear-gradient(225deg, transparent 50%, #bbd8bd 50%),
+    linear-gradient(315deg, transparent 50%, #66b361 50%);
+  background-size: 15px 15px;
+  width: 15em;
+  height: 15em;
+  animation: anim2 20s infinite;
+}
+
+#grid div:nth-child(3){
+   background:
+    linear-gradient(45deg, transparent 50%, #8e79b4 50%),
+    linear-gradient(135deg, transparent 50%, #8062ac 50%),
+    linear-gradient(225deg, transparent 50%, #cebbd8 50%),
+    linear-gradient(315deg, transparent 50%, #7d61b3 50%);
+  background-size: 15px 15px;
+  width: 8em;
+  height: 8em;
+  animation: anim1 15s infinite;
+}
+
+
+@keyframes anim1 {
+  0%{transform: rotate(0deg);}
+  100%{transform: rotate(360deg);}
+}
+
+@keyframes anim2 {
+  0%{transform: rotate(0deg);}
+  100%{transform: rotate(-360deg);}
+}
